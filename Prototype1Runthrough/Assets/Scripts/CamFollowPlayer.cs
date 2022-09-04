@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Prototype 1)
+ * (Brief description of the code in the file.
+ *  Follows the player at a dedicated distance for visual assistance)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

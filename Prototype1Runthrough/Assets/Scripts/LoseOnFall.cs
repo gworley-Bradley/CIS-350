@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Prototype 1)
+ * (Brief description of the code in the file.
+ *  If the player falls off the platform the game is over)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

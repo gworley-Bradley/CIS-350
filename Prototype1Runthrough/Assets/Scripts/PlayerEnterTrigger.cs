@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Prototype 1)
+ * (Brief description of the code in the file.
+ *  Adds to the score when the player enters the triggerzone)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

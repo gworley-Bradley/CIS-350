@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Prototype 1)
+ * (Brief description of the code in the file.
+ *  Manages the score of the player and decides win or loss)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
