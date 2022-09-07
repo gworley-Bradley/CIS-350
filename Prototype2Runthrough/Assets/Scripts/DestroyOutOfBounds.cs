@@ -11,6 +11,7 @@ public class DestroyOutOfBounds : MonoBehaviour
 
     private void Start()
     {
+        //Used to find the component we are interacting with
         healthSystemScript = GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>();
     }
 
@@ -22,13 +23,15 @@ public class DestroyOutOfBounds : MonoBehaviour
         //food going out of bounds
         if (transform.position.z > topBound)
         {
+            //destroying the food object if it gets to bounds
             Destroy(gameObject);
         }
         //animals going out of bounds
         if (transform.position.z < bottomBound)
         {
+            //invoking take damage function in health system
             healthSystemScript.TakeDamage();
-
+            //destroying the animal object if it gets to bounds
             Destroy(gameObject);
         }
     }

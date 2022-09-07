@@ -14,9 +14,9 @@ public class PlayerController : MonoBehaviour
     {
         //Get horizontal input from right and left arrow keys or A and D keys 
         horizontalInput = Input.GetAxis("Horizontal");
-
+        //Player control left and right
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
-
+        //Keeps the player in the bounds of the game
         if (transform.position.x < -xRange)
         {
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);

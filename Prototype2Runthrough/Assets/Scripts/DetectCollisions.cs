@@ -15,9 +15,10 @@ public class DetectCollisions : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //Calculates score addition when an animal is hit with food
         displayScoreScript.score++;
+        //Then destroys all objects
         Destroy(other.gameObject);
-
         Destroy(gameObject);
     }
 }

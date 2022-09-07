@@ -18,22 +18,9 @@ public class SpawnManager : MonoBehaviour
     {
         //get a reference to the health system script
         healthSystem = GameObject.FindGameObjectWithTag("HealthSystem").GetComponent<HealthSystem>();
-
-        // InvokeRepeating("SpawnRandomPrefab", 2, 1.5f);
-
+        //Using coroutine to randomly spawn prefabs
         StartCoroutine(SpawnRandomPrefabWithCoroutine());
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-
-            SpawnRandomPrefab();
-
-        }
     }
     void SpawnRandomPrefab()
     {
@@ -43,7 +30,7 @@ public class SpawnManager : MonoBehaviour
         //Generate Spawn Position
         Vector3 spawnPos = new Vector3(Random.Range(leftBound, rightBound), 0, spawnPosZ);
 
-
+        //Spawn Prefab
         Instantiate(prefabsToSpawn[prefabIndex], spawnPos, prefabsToSpawn[prefabIndex].transform.rotation);
     }
 
@@ -57,9 +44,9 @@ public class SpawnManager : MonoBehaviour
         {
             //Instead of copy pasting, call the encapsulated method already written
             SpawnRandomPrefab();
-
+            //random delay calculation
             float randomDelay = Random.Range(1.5f, 3.0f);
-
+            //waiting for designated random delay
             yield return new WaitForSeconds(randomDelay);
         }
     }
