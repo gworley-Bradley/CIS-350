@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Prototype 2)
+ * (Brief description of the code in the file.
+ *  Used to spawn random animals at random locations within the game)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

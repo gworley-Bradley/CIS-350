@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Prototype 2)
+ * (Brief description of the code in the file.
+ *  Destroys the prefabs that go outside of the set bounds)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

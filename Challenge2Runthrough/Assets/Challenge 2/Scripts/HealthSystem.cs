@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Challenge 2)
+ * (Brief description of the code in the file.
+ *  Keeps track of player health and score, also decides game win or lose)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

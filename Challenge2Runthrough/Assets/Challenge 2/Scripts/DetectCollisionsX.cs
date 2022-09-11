@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Challenge 2)
+ * (Brief description of the code in the file.
+ *  Used to detect the colisions of the dog and ball, also used for score/lives)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

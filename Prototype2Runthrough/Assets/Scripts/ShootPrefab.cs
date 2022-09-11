@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Prototype 2)
+ * (Brief description of the code in the file.
+ *  Allows the player to shoot their food prefab at the animals)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

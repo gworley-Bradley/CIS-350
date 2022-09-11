@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Prototype 2)
+ * (Brief description of the code in the file.
+ *  Detects the colisions and calculates the score/lives of the game)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

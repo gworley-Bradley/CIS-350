@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Challenge 2)
+ * (Brief description of the code in the file.
+ *  Controls the spawning of the balls on a random interval using coroutine )
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

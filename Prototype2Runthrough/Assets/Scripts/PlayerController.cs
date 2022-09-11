@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Prototype 2)
+ * (Brief description of the code in the file.
+ *  Allows the player to control their character)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float speed = 10.0f;
     private float xRange = 14;
+
 
     // Update is called once per frame
     void Update()
