@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Challenge 3)
+ * (Brief description of the code in the file.
+ *  Used to manage the spawn of bombs and coins)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,6 +19,7 @@ public class SpawnManagerX : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //starts the repeat spawning of SpawnObjects
         InvokeRepeating("SpawnObjects", spawnDelay, spawnInterval);
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerControllerX>();
     }
@@ -27,6 +34,7 @@ public class SpawnManagerX : MonoBehaviour
         // If game is still active, spawn new object
         if (!playerControllerScript.gameOver)
         {
+            //spawn the object in the designated location
             Instantiate(objectPrefabs[index], spawnLocation, objectPrefabs[index].transform.rotation);
         }
 

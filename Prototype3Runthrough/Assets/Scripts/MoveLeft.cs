@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Prototype 3)
+ * (Brief description of the code in the file.
+ *  Is used to move the background and obstacles left)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,7 +25,7 @@ public class MoveLeft : MonoBehaviour
     {
         if (playerControllerScript.gameOver == false)
         {
-
+            //move left
             transform.Translate(Vector3.left * Time.deltaTime * speed);
 
         }

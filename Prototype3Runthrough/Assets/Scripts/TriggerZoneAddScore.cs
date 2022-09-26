@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Prototype 3)
+ * (Brief description of the code in the file.
+ *  Used as a trigger to add player score per obstacles)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

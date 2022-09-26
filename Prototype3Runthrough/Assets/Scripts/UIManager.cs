@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Prototype 3)
+ * (Brief description of the code in the file.
+ *  Manages the UI for the player to see score and updates)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -46,7 +52,7 @@ public class UIManager : MonoBehaviour
         {
             scoreText.text = "You Lose!" + "\n" + "Press R to Try Again";
         }
-
+        //if the player reaches 10 score they win
         if (score >= 10)
         {
             playerControllerScript.gameOver = true;
@@ -56,7 +62,7 @@ public class UIManager : MonoBehaviour
 
             scoreText.text = "You Win!" + "\n" + "Press R to Try Again!";
         }
-
+        //Allows the player to restart the game whether they won or lost
         if (playerControllerScript.gameOver && Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);

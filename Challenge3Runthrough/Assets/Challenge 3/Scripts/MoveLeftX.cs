@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (challenge 3)
+ * (Brief description of the code in the file.
+ *  Is used to move the background and obstacles left)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

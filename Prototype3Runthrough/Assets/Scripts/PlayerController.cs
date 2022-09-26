@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Prototype 3)
+ * (Brief description of the code in the file.
+ *  Allows the the player to control the character
+ *  Also adds particles and audio)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -49,6 +56,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //allows the player to jump if they are on the ground and the game is not over
         if(Input.GetKeyDown(KeyCode.Space) && isOnGround && !gameOver)
         {
 
@@ -80,9 +88,10 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Game Over!");
             gameOver = true;
-
+            
+            //stops the dirt particles if the player loses
             dirtParticle.Stop();
-
+            //plays the crash sound if the player loses
             playerAudio.PlayOneShot(crashSound, 1.0f);
 
             //play death animation

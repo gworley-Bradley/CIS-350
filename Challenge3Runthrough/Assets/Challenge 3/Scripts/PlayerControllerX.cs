@@ -1,4 +1,11 @@
-﻿using System.Collections;
+﻿/*
+ * (Gavin Worley)
+ * (Challenge 3)
+ * (Brief description of the code in the file.
+ *  Allows the player to control the character
+ *  Also adds particles and audio)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -79,6 +86,7 @@ public class PlayerControllerX : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Ground") && !gameOver)
         {
+            //bounce the player off the ground if they hit and make a noise
             playerRb.AddForce(Vector3.up * 15, ForceMode.Impulse);
             playerAudio.PlayOneShot(boingSound, 1.0f);
         }
